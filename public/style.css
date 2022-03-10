@@ -1,0 +1,177 @@
+@font-face {
+    font-family: KGHappy;
+    src: url("./assets/fonts/KGHAPPY.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: Posterama;
+    src: url("./assets/fonts/Posterama 1919 Bold.otf");
+    font-display: swap;
+}
+
+:root {
+  --blue: #242466;
+  --lblue: #a0f9fe;
+}
+
+html::-webkit-scrollbar { 
+    background-color: transparent;
+    width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #8A8A8A;
+    border-radius: 50px;
+    opacity: 0.1;
+}
+
+html {
+    background:url("./assets/bg/radient.png") repeat;
+}
+
+body {
+    background: url("./assets/bg/dot.png") repeat;  
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow: overlay
+    -webkit-animation: displace 40s linear infinite;
+    animation: displace 40s linear infinite;
+}
+
+@-webkit-keyframes displace {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 3840px -2160px;
+  }
+}
+
+@keyframes displace {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 3840px -2160px;
+  }
+}
+
+
+.page {
+    min-width: 100vw;
+    min-height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.title {
+    font-family: KGHappy;
+    text-align: center;
+    font-size: 90px;
+    margin-bottom: 30px;
+    color: var(--blue);
+    user-select: none;
+
+}
+
+.textbox-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    text-align: center;
+
+}
+
+.textbox { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    border: solid 6px var(--blue);
+    border-radius: 20px;
+    background: var(--blue);
+}
+
+.langue { 
+    font-family: Posterama;
+    font-size: 45px;
+    margin: 10px;
+    color: var(--lblue);
+    user-select: none;
+
+}
+
+textarea { 
+    font-family: Open Sans;
+    height: 100%;
+    width: 99%;
+    font-size: 25px;
+    -webkit-border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
+    border-radius: 0 0 15px 15px;
+    outline: none;
+    resize: none;
+    border: none;
+}
+
+.textarea-frame {
+    width:95%;
+    height:95%;
+    padding: 10px;
+    background: white;
+    -webkit-border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
+    border-radius: 0 0 15px 15px;
+}
+
+.traduire { 
+    font-family: Posterama;
+    text-align: center;
+    height: 12%;
+    width: 20%;
+    margin-top: 50px;
+    font-size: 40px;
+    padding-top:5px;
+    color: var(--lblue);
+    background: var(--blue);
+    border: solid 4px transparent;
+    -webkit-border-radius:25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    transition-duration: 0.2s;
+    user-select: none;
+
+
+}
+
+#thebody {
+    backdrop-filter: blur(100px);
+}
+
+.traduire:hover {
+    cursor:pointer;
+    border: solid 4px white;
+}
+
+.footer { 
+    height: auto;
+    width: auto;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    text-align: right;
+    font-family: Open Sans;
+}
