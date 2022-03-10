@@ -35,8 +35,8 @@ body {
     padding: 0px;
     overflow-x: hidden;
     overflow: overlay
-    -webkit-animation: displace 40s linear infinite;
-    animation: displace 40s linear infinite;
+    -webkit-animation: displace 80s linear infinite;
+    animation: displace 80s linear infinite;
 }
 
 @-webkit-keyframes displace {
